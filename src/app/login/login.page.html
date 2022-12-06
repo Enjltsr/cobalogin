@@ -1,0 +1,29 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-title>Halaman login</ion-title>
+  </ion-toolbar>
+ </ion-header>
+ <ion-content>
+  <ion-row>
+    <ion-col >
+        <h1 class="ion-text-center" style="margin-top: 50px;">
+          Login
+        </h1>
+      <ion-item fill="outline" shape="round" id="un" class="ion-align-items-center">
+        <ion-label position="floating">Username</ion-label>
+        <ion-input placeholder="Insert Username" type="text" [(ngModel)]="username" required="required"></ion-input>
+      </ion-item>
+      <ion-item fill="outline" shape="round" class="ion-align-items-center">
+        <ion-label position="floating">Password</ion-label>
+        <ion-input placeholder="Insert password" type="password" [(ngModel)]="password" required="required"></ion-input>
+      </ion-item>
+    </ion-col>
+  </ion-row>
+  
+
+  <ion-row class="ion-align-items-center">
+  <ion-col class="ion-text-center">
+  <ion-button fill="outline" type="submit" shape="round" (click)="prosesLogin()">Login</ion-button>
+  </ion-col>
+  </ion-row>
+ </ion-content>
